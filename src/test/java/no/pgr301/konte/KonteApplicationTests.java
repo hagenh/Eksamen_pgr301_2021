@@ -15,10 +15,11 @@ class KonteApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
+	/*@Test
 	boolean testWillFail(){
 		//measurementList.size() == 2;
-		return measurementList.size() == 2;
-	}
+		String test = "Test";
+		return assertTrue(test, "Tost");
+	}*/
 
 }
