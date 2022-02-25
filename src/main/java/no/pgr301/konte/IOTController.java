@@ -1,6 +1,7 @@
 package no.pgr301.konte;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +22,12 @@ public class IOTController {
     }
 
     // Todo implement an endpoint that returns all measurements
+    @GetMapping(path = "/weather", consumes = "application/json")
+    public ResponseEntity<List<Measurement>> getMeasure(
+            @RequestBody Measurement measurement) {
+        //measurementList.add(measurement);
+        return ResponseEntity.of(Optional.of(measurementList));
+    }
 
 
 }
