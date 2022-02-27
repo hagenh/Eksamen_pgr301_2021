@@ -16,8 +16,11 @@ Fordelen med å jobbe med branch protection er -----------------------
 
 Steg 1: Gå inn i settings på et github repo du har rettigheter til.
 Steg 2: Trykk på "branches" i menyen på siden:
-![steg 2](https://imgur.com/a/tiRAi63)
+![steg 2](screenshots/steg2.png)
 Steg 3
+![steg 3](screenshots/steg3.png)
+Steg 4
+![steg 4](screenshots/steg4.png)
 
 ## Task 4
 
