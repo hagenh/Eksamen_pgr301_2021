@@ -22,11 +22,10 @@ public class IOTController {
     }
 
     // Todo implement an endpoint that returns all measurements
-    @GetMapping(path = "/weather", consumes = "application/json")
-    public ResponseEntity<List<Measurement>> getMeasure(
-            @RequestBody Measurement measurement) {
-        //measurementList.add(measurement);
-        return ResponseEntity.of(Optional.of(measurementList));
+    @GetMapping(path = "/weather", produces = "application/json")
+    public ResponseEntity<List<Measurement>> getMeasure () {
+
+        return  ResponseEntity.of(Optional.of(measurementList));
     }
 
 
