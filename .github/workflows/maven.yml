@@ -19,17 +19,15 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        
     - name: Build
       run: mvn -B package --file pom.xml -DskipTests
-        
-    - name: build docker image
-      run: docker build . -t konte2022:latest 
-      
-    - name: run docker image
-      run: docker run konte2022:latest
       
     - name: Test
       run: mvn -B test --file pom.xml
+        
+    - name: build docker image
+      run: docker build . -t konte2022:latest 
       
     - name: tag image
       run: docker tag konte2022:latest hagencoderman/konte2022
