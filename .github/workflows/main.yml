@@ -1,0 +1,14 @@
+name: K6 loadtest
+on: [push]
+jobs:
+  build:
+    name: Run k6 test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: run k6 on loadtest.js
+        uses: k6io/action@v0.1
+        with:
+          filename: loadtest.js
+          flags: --vus 50 --duration 15s
