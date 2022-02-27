@@ -19,8 +19,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        
     - name: Build
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file pom.xml -DskipTests
       
     - name: Test
       run: mvn -B test --file pom.xml
