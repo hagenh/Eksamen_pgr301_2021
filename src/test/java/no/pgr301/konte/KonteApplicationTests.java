@@ -22,7 +22,7 @@ class KonteApplicationTests {
     void contextLoads() {
     }
 
-   /* @Test
+    @Test
     void testGetMeasurementList() {
         final List<Measurement> measurementList = new ArrayList<>();
         Assertions.assertTrue(true, String.valueOf(measurementList.size()));
@@ -42,7 +42,7 @@ class KonteApplicationTests {
 				.post("http://localhost:5050/weather/")
                 .then()
                 .statusCode(200);
-    }*/
+    }
 
     @Test
     void testDummyTest(){
