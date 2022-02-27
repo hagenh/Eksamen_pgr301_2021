@@ -32,7 +32,10 @@ jobs:
         password: ${{ secrets.docker_login }}
         
     - name: build docker image
-      run: docker build . -t konte2022:latest hagencoderman/konte2022
+      run: docker build . -t konte2022:latest 
+      
+    - name: tag image
+      run: docker tag konte2022:latest hagencoderman/konte2022
       
     - name: publish docker image
       run: docker push hagencoderman/konte2022
