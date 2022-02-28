@@ -11,21 +11,32 @@ Fordelen med å jobbe på denne måten er at man ikke commiter dårlig eller utr
 For å sette branch protection:
 Steg 1: Gå inn i settings på et github repo du har rettigheter til.
 Steg 2: Trykk på "branches" i menyen på siden:
+
+
 ![steg 2](screenshots/steg2.png)
+
+
 Steg 3: Trykk på "add rule" knappen
+
+
 ![steg 3](screenshots/steg3.png)
+
+
 Steg 4: Trykk på "Require a pull request before merging" og der etter "Require approvals" i undermenyen som dukker opp. Ved å ha en pipeline kjørende på feature branchen kan man automatisk bli nektet hvis f.eks. testene ikke funker. Hvis de feiler vil github stoppe deg fra å merge inn i main.
+
+
 ![steg 4](screenshots/steg4.png)
 
 ## Task 4
 
-Sensor må navigere inn i prosjekt mappen min. Til samme mappe som dockerfile filen. Etter det trenger sensor bare å kjøre: `docker build . -t konte2022:latest`
+4B: Sensor må navigere inn i prosjekt mappen min. Til samme mappe som dockerfile filen. Etter det trenger sensor bare å kjøre: `docker build . -t konte2022:latest`
 Denne kommandoen ber docker om å builde et image i "denne" contexten med navn "konte2022" og tag "latest"
 
-I samme mappe som forrige kommando og etter docker build kommandoen, kan sensor kjøre `docker run -p 9999:9999 konte2022:latest`. Her ber vi docker kjøre imaget fra forrige kommando på post 9999.
+4C: I samme mappe som forrige kommando og etter docker build kommandoen, kan sensor kjøre `docker run -p 9999:9999 konte2022:latest`. Her ber vi docker kjøre imaget fra forrige kommando på post 9999.
 
-Sensor kan kjøre en konsoll fra hvor som helst. Imaget ligger offentlig, så sensor trenger ikke logge inn. Dette betyr at sensor bare trenger å pulle imaget fra docker ved å skrive: `docker pull hagencoderman/konte2022:latest`. Dette laster ned riktig image fra min bruker. Der etter må sensor kjøre samme kommando som fra forrige oppgave: `docker run -p 9999:9999 konte2022:latest`
+4D: Sensor kan kjøre en konsoll fra hvor som helst. Imaget ligger offentlig, så sensor trenger ikke logge inn. Dette betyr at sensor bare trenger å pulle imaget fra docker ved å skrive: `docker pull hagencoderman/konte2022:latest`. Dette laster ned riktig image fra min bruker. Der etter må sensor kjøre samme kommando som fra forrige oppgave: `docker run -p 9999:9999 konte2022:latest`
 
+4E:
 Oppgaven ber om et image som allerede har blitt bygd. Da må sensor først logge inn på docker med:
 
 `docker login`
