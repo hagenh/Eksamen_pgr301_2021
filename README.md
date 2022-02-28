@@ -1,4 +1,4 @@
-# Konteeksamen 2022 - Kandidatnummer XxXx
+# Konteeksamen 2022 - Kandidatnummer 1000
 
 ## Task 1
 
@@ -60,3 +60,7 @@ Dette blir forklart i dokumentasjonen til docker:
 https://docs.docker.com/docker-hub/access-tokens/
 
 Jeg er litt usikker på om det var dette som var ment i 5B oppgaven. Oppgaven ber om endringer i github brukeren sin. Dette er mer en endring i repoet. Jeg håper jeg har tolket B oppgaven riktig.
+
+## Task 6
+
+K6 loadtesten bruker loadtest.js vi fikk i eksamensoppgaven. I tillegg sjekker den om 95 prosentilen av requests overgår 500ms. Loadtesten kjøres i en egen workflow på github actions.
