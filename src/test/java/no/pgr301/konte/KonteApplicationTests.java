@@ -53,8 +53,6 @@ class KonteApplicationTests {
         final List<MeasurementDto> measurementList = new ArrayList<>();
         Assertions.assertTrue(true, String.valueOf(measurementList.size()));
 
-        MeasurementDto dto = new MeasurementDto(23.41, 123, 134, 652);
-        measurementList.add(dto);
 
         Assertions.assertFalse(false, String.valueOf(measurementList.isEmpty()));
     }

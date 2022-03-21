@@ -25,7 +25,7 @@ public class IOTController {
     @GetMapping(path = "/weather", produces = "application/json")
     public ResponseEntity<List<Measurement>> getMeasure () {
 
-        return  ResponseEntity.of(Optional.of(measurementList));
+        return  ResponseEntity.of(Optional.of(new ArrayList<>()));
     }
 
 
