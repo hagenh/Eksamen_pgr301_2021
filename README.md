@@ -1,5 +1,7 @@
 # Konteeksamen 2022 - Kandidatnummer 1000
 
+## Grade A
+
 ## Task 1
 
 Jeg skrev en get og en post test som ikke blir brukt. Dette er på grunn av problemer med å kjøre tester i github actions uten å kjøre applikasjonen. På grunn av dette lagde jeg en dummy test som bare legger til et object i en list lokalt. Denne testen funker for oppgave 2, selv om det ikke er en ekte test. De to andre testene kan kjøres lokalt, hvis det er ønskelig.
