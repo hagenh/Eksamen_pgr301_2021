@@ -1,4 +1,4 @@
-# Konteeksamen 2022 - Kandidatnummer 1000
+# Eksamen 2022 - Kandidatnummer 1000
 
 ## Grade A
 
